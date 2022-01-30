@@ -22,9 +22,44 @@ See also [here](https://github.com/tiangolo/typer/issues/185).
 
 #### Command with alias
 
-#### Execute stuff prior to any other commands
+```
+import typer
+app = typer.Typer(help="A test app", add_completion=False)
+
+@app.command()
+def test(test_arg: str):
+    "Test command"
+    print(f"Test, the argument is {test_arg}.")
+```
+
+Then:
+
+```
+if __name__ == "__main__":
+    app()
+```
+
+#### Initialization + global arguments 
+
+```
+@app.callback(hidden=True)
+def some_init_function(global_arg: str="global_arg"):
+    print("Initializing stuff, global_arg = {global_arg}")
+```
 
 #### Interactive shell
+
+```
+import click
+from click_repl import repl
+
+@app.command("i")
+def interactive():
+    "Run in interactive mode"
+    click.echo("Running in interactive mode. This supports tab completion.")
+    click.echo("Use ':help' for help info, or ':quit' to quit.")
+    repl(click.get_current_context())
+```
 
 ### Disadvantages
 
