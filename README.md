@@ -13,7 +13,7 @@ Requirements:
 ## Typer + click-repl (current solution)
 
 [Typer](https://github.com/tiangolo/typer) is a somewhat involved CLI generator based on click, but it just works.
-I suspect something simpler could be built based on click but 
+I suspect something simpler could be built based on click but that would require a non-negligible amount of work.
 
 It does not support interactive shells, but I found a way to workaround that using [click-repl](https://github.com/click-contrib/click-repl).
 See also [here](https://github.com/tiangolo/typer/issues/185).
@@ -21,6 +21,7 @@ See also [here](https://github.com/tiangolo/typer/issues/185).
 ### Reference code
 
 #### Command with alias
+
 #### Execute stuff prior to any other commands
 
 #### Interactive shell
