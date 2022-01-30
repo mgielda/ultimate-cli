@@ -22,7 +22,7 @@ See also [here](https://github.com/tiangolo/typer/issues/185).
 
 #### Command with alias
 
-```
+```python
 import typer
 app = typer.Typer(help="A test app", add_completion=False)
 
@@ -34,14 +34,14 @@ def test(test_arg: str):
 
 Then:
 
-```
+```python
 if __name__ == "__main__":
     app()
 ```
 
 #### Initialization + global arguments 
 
-```
+```python
 @app.callback(hidden=True)
 def some_init_function(global_arg: str="global_arg"):
     print("Initializing stuff, global_arg = {global_arg}")
@@ -49,7 +49,7 @@ def some_init_function(global_arg: str="global_arg"):
 
 #### Interactive shell
 
-```
+```python
 import click
 from click_repl import repl
 
