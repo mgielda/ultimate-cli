@@ -20,7 +20,7 @@ See also [here](https://github.com/tiangolo/typer/issues/185).
 
 ### Reference code
 
-#### Command with alias
+#### Command
 
 ```python
 import typer
@@ -47,7 +47,7 @@ def some_init_function(global_arg: str="global_arg"):
     print("Initializing stuff, global_arg = {global_arg}")
 ```
 
-#### Interactive shell
+#### Interactive shell (+ command with alias)
 
 ```python
 import click
@@ -64,7 +64,7 @@ def interactive():
 ### Disadvantages
 
 * when you don't provide the subcommand, the default help does not list the subcommands (is this fixable? it must be!)
-* the decorated function names are not available as commands, i.e. aliases supersede the main subcommand function name (perhaps this is fixable too)
+* the decorated function names are not available as commands, i.e. aliases supersede the main subcommand function name (perhaps this is fixable too; a workaround is to register the function twice)
 * you sometimes will need to use Typer.argument instead of normal Python objects for completion to work in interactive shell
 * interactive shell shows the full help (with program name etc.) every type you make a mistake (fixable?)
 * help/quitting is weird in the interactive shell (fixable? but would need to dig into click-repl)
