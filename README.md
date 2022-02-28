@@ -66,7 +66,7 @@ def interactive():
 * when you don't provide the subcommand, the default help does not list the subcommands (is this fixable? it must be!)
 * the decorated function names are not available as commands, i.e. aliases supersede the main subcommand function name (perhaps this is fixable too; a workaround is to register the function twice)
 * you sometimes will need to use Typer.argument instead of normal Python objects for completion to work in interactive shell
-* interactive shell shows the full help (with program name etc.) every type you make a mistake (fixable?)
+* interactive shell shows the full help (with program name etc.) every time you make a mistake (fixable?)
 * help/quitting is weird in the interactive shell (fixable? but would need to dig into click-repl)
 
 Once some more fixes are found, we will probably need a new package to hide the complexity.
@@ -95,6 +95,12 @@ Tried to use it several times, but always fall into the same pitfall:
 * arcane internals (which is understandable, since it has so many cool features)
 
 It is a great inspiration, but for now remains well, inspiration.
+
+## argh
+
+[Argh](https://argh.readthedocs.io/en/latest/tutorial.html) is nice. I used to use argh. I think where it failed me was stuff like general options not tied to any subcommand etc. Perhaps of course it was me not knowing how to use argh well enough.
+Also no interactive shells and fancy stuff to speak of ;-)
+Anyway it remains a very decent choice.
 
 ## fire
 
@@ -131,4 +137,3 @@ Also, the considerations about `xonsh` apply.
 While there are many JS task automation solutions (perhaps too many), generally I feel somewhat reluctant to a) use JavaScript (but I can be convinced) and b) pull in Node as a dependency everywhere.
 
 For bash integration, there is the excellent [zx](https://github.com/google/zx) at least.
-
