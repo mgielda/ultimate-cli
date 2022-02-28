@@ -78,7 +78,7 @@ It actually does something in under 100 lines of code.
 
 ## plac
 
-Plac is as awesome as it is unpopular and arcane.
+[Plac](https://plac.readthedocs.io/en/latest/) is as awesome as it is unpopular and arcane.
 
 See:
 
@@ -102,6 +102,8 @@ It is a great inspiration, but for now remains well, inspiration.
 Also no interactive shells and fancy stuff to speak of ;-)
 Anyway it remains a very decent choice.
 
+Trivia: I learned about [plac](#plac) from [argh's similar projects page](https://argh.readthedocs.io/en/latest/similar.html).
+
 ## fire
 
 While [fire](https://github.com/google/python-fire) is a cool project, it lacks some capabilities for the use cases that I typically hit (at least last I checked) and does not offer any of interactive shell and other advanced features.
@@ -120,7 +122,7 @@ So perhaps there is promise here, but failed to find it so far, will continue lo
 I don't know -- I am not really looking for a new shell, exactly, more a simple task automation solution.
 May revisit in the future.
 
-Xonsh seems to run e.g. `tablist` properly, **including** the interactive shell, but to get the xonsh magic, you will need to explicitly use the `.xsh` extension. So this is promising!
+[Xonsh](https://xon.sh/) seems to run e.g. `tablist` properly, **including** the interactive shell, but to get the xonsh magic, you will need to explicitly use the `.xsh` extension. So this is promising!
 
 Question is, if super-seamless bash integration is really the main requirement to warrant including xonsh as a dependency.
 
