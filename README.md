@@ -100,7 +100,9 @@ It is a great inspiration, but for now remains well, inspiration.
 
 [Argh](https://argh.readthedocs.io/en/latest/tutorial.html) is nice. I used to use argh. I think where it failed me was stuff like general options not tied to any subcommand etc. Perhaps of course it was me not knowing how to use argh well enough.
 Also no interactive shells and fancy stuff to speak of ;-)
-Anyway it remains a very decent choice.
+Anyway it remains a very decent choice and [is easy to use](https://argh.readthedocs.io/en/latest/#examples)
+
+However, it is [somewhat unmaintained](https://github.com/neithere/argh/issues/124#issuecomment-820376819) (last commit in 2016) and licensed on LGPL.
 
 Trivia: I learned about [plac](#plac) from [argh's similar projects page](https://argh.readthedocs.io/en/latest/similar.html).
 
